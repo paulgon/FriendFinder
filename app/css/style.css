@@ -1,6 +1,7 @@
 body {
-  font-family: "Quicksand", sans-serif;
-  background: lightseagreen;
+  font-family: 'Mansalva', cursive;
+  background: yellowgreen;
+  font-size: 30px;
 }
 .site {
   display: flex;
@@ -11,12 +12,21 @@ body {
   flex: 1;
 }
 h1 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Mansalva", sans-serif;
   font-size: 6em;
   text-align: center;
   margin-top: 75px;
   margin-bottom: 20px;
 }
+
+h2 {
+  font-family: "Mansalva", sans-serif;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+
 a {
   color: black;
   font-size: 25px;

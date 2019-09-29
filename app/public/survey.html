@@ -6,29 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container content">
-        <h1>Take the Survey!</h1>
+        <h2>Friend Finder Survey!</h2>
         <br>
-        <p>OK! Let's see who your new best friend should be.
-            To answer the survey all you have to do is choose a
-            number between 1 and 5. Simply rate your choose between
-            STRONGLY DISAGREE, or STRONLY AGREE. Easy right! Give
-            it a go, and find your new Best Friend.
+        <p>To find your new best friend, all you need to do is choose between 1 (strongly disagree) and 5 (strongly agree).
         </p>
         <form>
             <div class="form-group">
-                <input id="name" type="text" class="form-control" placeholder="NAME (Required)">
+                <input id="name" type="text" class="form-control" placeholder="Your name (Required)">
             </div>
             <div class="form-group">
-                <input id="photo" type="text" class="form-control" placeholder="LINK to Profile Photo (Required)">
+                <input id="photo" type="text" class="form-control" placeholder="Link to your profile pic (Required)">
             </div>
             <!--START OF SURVEY QUESTIONS AND CHOICE'S 1-10 -->
             <div class="form-group">
-                <label for="question1">I believe in Ghouls.</label>
+                <label for="question1">Fall is my favorite season.</label>
                 <select class="form-control" id="question1">
                     <option value="empty"></option>
                     <option value="1">Strongly Disagree</option>
@@ -40,7 +36,7 @@
             </div>
 
             <div class="form-group">
-                <label for="question2">I have bird-like qualities.</label>
+                <label for="question2">Watching TV is my favorite hobby .</label>
                 <select class="form-control" id="question2">
                     <option value="empty"></option>
                     <option value="1">Strongly Disagree</option>
@@ -52,7 +48,7 @@
             </div>
 
             <div class="form-group">
-                <label for="question3">I always use the D.E.N.N.I.S system.</label>
+                <label for="question3">I love sports!</label>
                 <select class="form-control" id="question3">
                     <option value="empty"></option>
                     <option value="1">Strongly Disagree</option>
@@ -149,7 +145,7 @@
         </form>
 
         <div class="text-center">
-            <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+            <button id="submitBtn" type="submit" class="btn btn-danger btn-lg">Submit</button>
         </div>
         <!--DISPLAY POP UP NEW BEST FRIEND RESULTS-->
         <div id="bestFriendModal" class="modal fade" role="dialog">
@@ -170,14 +166,6 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <div class="container">
-            <a href="/api/friends">Friends API</a>
-            <span>|</span>
-            <a href="https://github.com/Taramd30/Friend-Finder">GitHub Repo</a>
-        </div>
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
