@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey - Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container content">
+        <h1>Take the Survey!</h1>
+        <br>
+        <p>OK! Let's see who your new best friend should be.
+            To answer the survey all you have to do is choose a
+            number between 1 and 5. Simply rate your choose between
+            STRONGLY DISAGREE, or STRONLY AGREE. Easy right! Give
+            it a go, and find your new Best Friend.
+        </p>
+        <form>
+            <div class="form-group">
+                <input id="name" type="text" class="form-control" placeholder="NAME (Required)">
+            </div>
+            <div class="form-group">
+                <input id="photo" type="text" class="form-control" placeholder="LINK to Profile Photo (Required)">
+            </div>
+            <!--START OF SURVEY QUESTIONS AND CHOICE'S 1-10 -->
+            <div class="form-group">
+                <label for="question1">I believe in Ghouls.</label>
+                <select class="form-control" id="question1">
+                    <option value="empty"></option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question2">I have bird-like qualities.</label>
+                <select class="form-control" id="question2">
+                    <option value="empty"></option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question3">I always use the D.E.N.N.I.S system.</label>
+                <select class="form-control" id="question3">
+                    <option value="empty"></option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question4">I enjoy martial arts, but have never taken a class.</label>
+                <select class="form-control" id="question4">
+                    <option value="empty"></option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question5">I've killed many rats.</label>
+                <select class="form-control" id="question5">
+                    <option value="empty"></option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question6">I am God's gift to all women.</label>
+                <select class="form-control" id="question6">
+                    <option value="empty"></option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question7">I think all bar's should have Bible's.</label>
+                <select class="form-control" id="question7">
+                    <option value="empty"></option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question8">I've had many failed business ventures.</label>
+                <select class="form-control" id="question8">
+                    <option value="empty"></option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question9">I can always be found at a bar.</label>
+                <select class="form-control" id="question9">
+                    <option value="empty"></option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question10">I argue, all day everyday.</label>
+                <select class="form-control" id="question10">
+                    <option value="empty"></option>
+                    <option value="1">Strongly Disagree</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Strongly Agree</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="text-center">
+            <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+        </div>
+        <!--DISPLAY POP UP NEW BEST FRIEND RESULTS-->
+        <div id="bestFriendModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Your New Best Friend</h1>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="bestFriend"></h2>
+                        <img id="bestFriendPhoto" src="#">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <a href="/api/friends">Friends API</a>
+            <span>|</span>
+            <a href="https://github.com/Taramd30/Friend-Finder">GitHub Repo</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+<script type="text/javascript">
+    $("#submitBtn").on("click", function (event) {
+        event.preventDefault();
+        var valid = true;
+        if ($("#name").val() === "" ||
+            $("#photo").val() === "") {
+            valid = false;
+        }
+        else if (
+            $("#question1").val() === "empty" ||
+            $("#question2").val() === "empty" ||
+            $("#question3").val() === "empty" ||
+            $("#question4").val() === "empty" ||
+            $("#question5").val() === "empty" ||
+            $("#question6").val() === "empty" ||
+            $("#question7").val() === "empty" ||
+            $("#question8").val() === "empty" ||
+            $("#question9").val() === "empty" ||
+            $("#question10").val() === "empty"
+        ) {
+            valid = false;
+        }
+        if (valid === true) {
+            var newUser = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [
+                    $("#question1").val(),
+                    $("#question2").val(),
+                    $("#question3").val(),
+                    $("#question4").val(),
+                    $("#question5").val(),
+                    $("#question6").val(),
+                    $("#question7").val(),
+                    $("#question8").val(),
+                    $("#question9").val(),
+                    $("#question10").val()
+                ]
+            };
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", newUser, function (data) {
+                $("#bestFriend").text(data.name);
+                $("#bestFriendPhoto").attr("src", data.photo);
+                $("#bestFriendModal").modal("toggle");
+            });
+        } else {
+            // Error Form:
+            alert("Please fill out the Survey");
+        }
+    });
+</script>
